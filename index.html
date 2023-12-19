@@ -4,16 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bella</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
+    <link rel="stylesheet" href="./css/normilize.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <style>
         body {
-            font-family: Rozetka, sans-serif;
+            font-family: RozetkaFonts, sans-serif;
         }
+
+        /* .list-item:nth-child(2n+1) odd / even {
+            background-color: red;
+        } */
+
+        /* body { */
+            /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+            /* font-family: 'Roboto', sans-serif;
+            font-weight: 400; */
+        /* } */
+
+        .navigation-list a {
+            letter-spacing: 2px;
+            font-weight: 600;
+            /* word-spacing: 10px; */
+            font-style: italic;
+        }
+
+        .example-item {
+            text-decoration: dashed;
+        }
+
+        .simple-button {
+            width: 235px;
+            min-width: 130px;
+            min-height: 130px;
+        }
+        
+        .hero {
+            background-color: beige;
+        }
+        
+        .wrapper {
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 200px;
+            float: right;
+            /* padding-right: 20px; */
+            padding-left: 20px;
+        }
+
+        .test-section {
+            float: left;
+            width: 300px;
+        }
+
+        /* .test-section::after {
+            
+        } */
+
+        footer::before {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+        /* .test-section + .test-section {
+            float: right;
+        } */
+
+        .test-section::first-line {
+            /* background-color: blue; */
+        }
+
+        .test-section::first-letter {
+            font-size: 30px;
+        }
+
+        /* .list-item::after {
+            content: "this is my item at the end of the line";
+        } */
+
+
+        /* footer {
+            clear: both;
+        } */
+
+        .simple-button {
+            border-radius: 5px;
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <a href="">
+        <a class="block white-block" href="">
             <img src="" alt="Bella logotype">
         </a>
         <nav>
@@ -31,6 +121,7 @@
                     <a href="">Contact</a>
                 </li>
             </ul>
+            <button class="simple-button">Click me Click me Click me Click me Click me Click me Click me Click me</button>
             <ul class="example-list">
                 <li class="example-item">
                     li elem
@@ -58,16 +149,18 @@
     </header>
     <main>
         <!-- hero section -->
-        <section>
-            <p>Food app</p>
-            <h1 id="title" class="main-title">Why stay hungry when you can order form Bella Onojie</h1>
-            <p>Download the bella onoje’s food app now on</p>
-            <button>Playstore</button>
-            <button>App store</button>
-            <br>
-            <img src="" alt="red mobile">
-            <img src="" alt="white mobile">
-            <hr>
+        <section class="hero">
+            <div class="wrapper">
+                <p>Food app</p>
+                <h1 id="title" class="main-title">Why stay hungry when you can order form Bella Onojie</h1>
+                <p>Download the bella onoje’s food app now on</p>
+                <button>Playstore</button>
+                <button>App store</button>
+                <br>
+                <img src="" alt="red mobile">
+                <img src="" alt="white mobile">
+                <hr>
+            </div>
         </section>
         <!-- steps section -->
         <section>
@@ -111,6 +204,18 @@
             <p>Available on your favorite store. Start your premium experience now</p>
             <button>Playstore</button>
             <button>App store</button>
+        </section>
+        <section class="test-section">
+            <img src="https://www.topgear.com/sites/default/files/2022/07/13.jpg" alt="car">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet vel sed asperiores animi consequuntur dolor tempora ab. Voluptas aspernatur beatae esse reiciendis dolores perferendis. Perferendis similique voluptatum voluptas iste. Vel excepturi iure repellat porro consectetur eaque id labore cum saepe ut, voluptates, culpa doloremque fuga at sequi dolor placeat ab nihil soluta. Eius delectus optio necessitatibus? Vel molestiae itaque id quis amet doloribus quaerat expedita esse illum, tenetur, minus, corporis nemo vitae error laudantium unde. Optio delectus fugiat dolores iure ipsa sunt nisi repellat tempore fugit consectetur dicta corporis ratione, debitis impedit aliquid nam accusamus. Repellat eos delectus necessitatibus doloremque veritatis quam excepturi laudantium! Corrupti illo dignissimos ex eveniet fugit. Magni assumenda nesciunt obcaecati. Illo voluptatum vero ratione est? Perspiciatis sapiente quam, eaque, obcaecati dolore maxime qui adipisci laudantium accusamus velit odit itaque cupiditate error blanditiis alias consequatur ex exercitationem quas. Itaque temporibus cum possimus quam dignissimos voluptas adipisci? Sunt sapiente aperiam voluptatibus aspernatur neque saepe magni vel animi porro quasi ipsa optio provident, qui illum sint quisquam eligendi excepturi nihil eos! Impedit vel deleniti eius perspiciatis dignissimos, autem eos accusamus est aperiam qui consequuntur quo laudantium non sapiente, nostrum praesentium modi. Maiores possimus commodi ratione nobis? Officiis, sed.
+            </p>
+        </section>
+        <section class="test-section">
+            <img src="https://www.topgear.com/sites/default/files/2022/07/13.jpg" alt="car">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eveniet vel sed asperiores animi consequuntur dolor tempora ab. Voluptas aspernatur beatae esse reiciendis dolores perferendis. Perferendis similique voluptatum voluptas iste. Vel excepturi iure repellat porro consectetur eaque id labore cum saepe ut, voluptates, culpa doloremque fuga at sequi dolor placeat ab nihil soluta. Eius delectus optio necessitatibus? Vel molestiae itaque id quis amet doloribus quaerat expedita esse illum, tenetur, minus, corporis nemo vitae error laudantium unde. Optio delectus fugiat dolores iure ipsa sunt nisi repellat tempore fugit consectetur dicta corporis ratione, debitis impedit aliquid nam accusamus. Repellat eos delectus necessitatibus doloremque veritatis quam excepturi laudantium! Corrupti illo dignissimos ex eveniet fugit. Magni assumenda nesciunt obcaecati. Illo voluptatum vero ratione est? Perspiciatis sapiente quam, eaque, obcaecati dolore maxime qui adipisci laudantium accusamus velit odit itaque cupiditate error blanditiis alias consequatur ex exercitationem quas. Itaque temporibus cum possimus quam dignissimos voluptas adipisci? Sunt sapiente aperiam voluptatibus aspernatur neque saepe magni vel animi porro quasi ipsa optio provident, qui illum sint quisquam eligendi excepturi nihil eos! Impedit vel deleniti eius perspiciatis dignissimos, autem eos accusamus est aperiam qui consequuntur quo laudantium non sapiente, nostrum praesentium modi. Maiores possimus commodi ratione nobis? Officiis, sed.
+            </p>
         </section>
     </main>
     <footer>

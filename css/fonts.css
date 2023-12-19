@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Rozetka;
+    font-family: RozetkaFonts;
     src: url("../fonts/RozetkaWeb-Regular.woff");
-    font-weight: 400;
+    font-weight: 300 400;
     font-stretch: condensed;
   }
